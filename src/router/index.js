@@ -1,11 +1,35 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import UsersList from '../components/UsersList.vue'
+import CounterComponent from '../components/CounterComponent.vue'
+import ConditionalRendering from '../components/ConditionalRendering'
+import ContactUs from '../components/ContactUs.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/contactus',
+    name: 'ContactUs',
+    component: ContactUs
+  },
+  {
+    path: '/conditinal',
+    name: 'ConditionalRendering',
+    component: ConditionalRendering
+  },
+  {
+    path: '/counter',
+    name: 'counter',
+    component: CounterComponent
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: UsersList
   },
   {
     path: '/about',

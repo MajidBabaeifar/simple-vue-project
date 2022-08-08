@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="px-3 navbar navbar-expand-lg bg-light">
         <div class="navbar-brand">Menu</div>
         <router-link class="nav-item nav-link" to="/">Home</router-link> |
         <router-link class="nav-item nav-link" to="/list">List</router-link> |
