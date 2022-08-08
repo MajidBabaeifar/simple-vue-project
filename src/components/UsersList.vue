@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="container">
         this is the users list
     </div>
 </template>
 <script>
 export default {
-    name : "UsersList"
+    name: "UsersList"
 }
 </script>
 <style>
