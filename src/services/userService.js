@@ -5,4 +5,8 @@ export class UserService {
         let dataUrl = `https://jsonplaceholder.typicode.com/users`
         return axios.get(dataUrl)
     }
+    static getUser(userId) {
+        let dataUrl = `https://jsonplaceholder.typicode.com/users/${userId}`
+        return axios.get(dataUrl)
+    }
 }

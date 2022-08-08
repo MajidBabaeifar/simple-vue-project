@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
-        <img v-if="isLoading" src="../assets/Loading_icon.gif" />
-        <table v-if="!isLoading" class="table table-striped table-hover">
+    <div class="text-center container">
+        <img class="text-center" v-if="isloading" src="../assets/Loading_icon.gif" />
+        <table v-if="!isloading" class="table table-striped table-hover">
             <thead class="bg-success text-white">
                 <tr>
                     <th>id</th>
@@ -13,11 +13,17 @@
             </thead>
             <tbody>
                 <tr v-for="user in users" :key="user.id">
+
                     <td>{{ user.id }}</td>
-                    <td>{{ user.username }}</td>
+                    <td>
+                        <router-link class="text-decoration-none text-success" :to="'/list/' + user.id">
+                            {{ user.username }}
+                        </router-link>
+                    </td>
                     <td>{{ user.email }}</td>
                     <td>{{ user.address.city }}</td>
                     <td>{{ user.phone }}</td>
+
                 </tr>
             </tbody>
         </table>
@@ -29,9 +35,9 @@ export default {
     name: "UsersList",
     data: function () {
         return {
-            isloading: true,
+            isloading: false,
             users: [],
-            errorMsg: ''
+            errorMsg: 'hihihi'
         }
     },
     created: async function () {

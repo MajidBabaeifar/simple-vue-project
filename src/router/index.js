@@ -3,12 +3,18 @@ import HomeView from '../views/HomeView.vue'
 import UsersList from '../components/UsersList.vue'
 import CounterComponent from '../components/CounterComponent.vue'
 import ContactUs from '../components/ContactUs.vue'
+import SingleUser from "../components/SingleUser.vue";
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/list/:id',
+    name: 'SingleUser',
+    component: SingleUser
   },
   {
     path: '/contactus',
