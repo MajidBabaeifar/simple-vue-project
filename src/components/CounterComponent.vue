@@ -7,7 +7,7 @@
                     {{ count }}
                 </div>
                 <button class="btn btn-success mx-5" @click="inc(1)">increase</button>
-                <button class="btn btn-warning" @click="dec()">secrease</button>
+                <button class="btn btn-warning" @click="dec()">decrease</button>
             </div>
         </div>
     </div>
